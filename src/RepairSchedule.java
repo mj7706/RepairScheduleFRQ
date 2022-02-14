@@ -28,6 +28,17 @@ public class RepairSchedule
     public boolean addRepair(int m, int b)
     {
         /* to be implemented in part (a) */
+        for (repair : schedule) {
+            if (repair.getMechanicNum() == m || repair.getBayNum == b) {
+                return false;
+            }
+            else {
+                CarRepair newRepair = CarRepair(m, b);
+                schedule.add(newRepair);
+                return true;
+
+            }
+        }
     }
 
     /** Returns an ArrayList containing the mechanic identifiers of all available mechanics,
